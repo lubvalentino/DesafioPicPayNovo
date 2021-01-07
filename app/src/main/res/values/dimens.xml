@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">36sp</dimen>
+    <dimen name="topStart_margin">20dp</dimen>
+    <dimen name="button_margin">12dp</dimen>
+    <dimen name="text_size_button">18sp</dimen>
+    <dimen name="margin_credicard_number">60dp</dimen>
+    <dimen name="margin_top_credit_card_name">64dp</dimen>
+    <dimen name="margin_entre_venc_cvv">22dp</dimen>
+    <dimen name="margin_top_text">30dp</dimen>
+    <dimen name="text_size_hint">16sp</dimen>
+    <dimen name="margin_button_expiration">136dp</dimen>
+</resources>

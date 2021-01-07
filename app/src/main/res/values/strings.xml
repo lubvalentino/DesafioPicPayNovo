@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Main_Activity</string>
+    <string name="app_name">DesafioPicPayNovo</string>
+    <string name="register_credit_card">Cadastrar cartão</string>
+    <string name="credit_card_number">Número do cartão</string>
+    <string name="credit_card_name">Nome do Titular</string>
+    <string name="credit_card_expiration">Vencimento</string>
+    <string name="credit_card_cvv">CVV</string>
+    <string name="credit_card_save">Salvar</string>
+    <string name="credit_card_mask">#### #### #### ####</string>
+    <string name="expiration_mask">##/##</string>
+    <string name="cvv_mask">###</string>
+    <string name="error_mensage_credit_card_number">Preenchimento de campo obrigatório</string>
+    <string name="cadastrar_cart_o">Cadastrar Cartão</string>
+    <string name="cadastre_um_cart_o_de_cr_dito">Cadastre um cartão de crédito</string>
+    <string name="Subtitle">Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal</string>
 </resources>

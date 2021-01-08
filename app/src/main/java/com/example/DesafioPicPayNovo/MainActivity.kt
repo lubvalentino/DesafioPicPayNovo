@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.DesafioPicPayNovo.extensions.setErrorIfEmpty
 import com.google.android.material.textfield.TextInputLayout
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tilCreditCardExpiration: TextInputLayout
     private lateinit var etCreditCardCvv: EditText
     private lateinit var btCreditCardSave: Button
+    private lateinit var btBack : ImageButton
 
     private fun canEnableSaveButton():Boolean{
         return etCreditCardNumber.length() > 0 && etCreditcardName.length() > 0
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         etCreditCardExpiration = findViewById(R.id.etCreditCardExpiration)
         etCreditCardCvv = findViewById(R.id.etCreditCardCvv)
         btCreditCardSave = findViewById(R.id.btCreditCardSave)
+        btBack = findViewById(R.id.ibRegisterCard)
         tilCreditCardExpiration = findViewById(R.id.tilCreditCardExpiration)
         etCreditCardNumber.addTextChangedListener(MaskWatcher(etCreditCardNumber,getString(R.string.credit_card_mask)))
         etCreditCardExpiration.addTextChangedListener(MaskWatcher(etCreditCardExpiration,getString(R.string.expiration_mask)))
@@ -52,7 +55,11 @@ class MainActivity : AppCompatActivity() {
 //            }else{
 //                tilCreditCardExpiration.isErrorEnabled = false
 //            }
-            startActivity(Intent(this, MainActivity2::class.java))
+            startActivity(Intent(this, PaymentActivity::class.java))
+        }
+
+        btBack.setOnClickListener {
+            finish()
         }
     }
 }

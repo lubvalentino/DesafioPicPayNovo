@@ -1,5 +1,6 @@
 package com.example.DesafioPicPayNovo
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,11 +13,11 @@ class HomeActivity : AppCompatActivity() {
 
         val users = mutableListOf<User>()
 
-        val user1 = User("teste", "@cesar.rodrigues","Cesar Rodrigues")
-        val user2 = User("teste", "@edu.misina","Eduardo Misina")
-        val user3 = User("teste", "@vinicius.trapia","Vinicius Trapia")
-        val user4 = User("teste", "@jonatas","Jonatas")
-        val user5 = User("teste", "@lincoln","Lincoln")
+        val user1 = User("https://randomuser.me/api/portraits/lego/6.jpg", "@cesar.rodrigues","Cesar Rodrigues")
+        val user2 = User("https://randomuser.me/api/portraits/lego/8.jpg", "@edu.misina","Eduardo Misina")
+        val user3 = User("https://randomuser.me/api/portraits/lego/5.jpg", "@vinicius.trapia","Vinicius Trapia")
+        val user4 = User("https://randomuser.me/api/portraits/lego/4.jpg", "@jonatas","Jonatas")
+        val user5 = User("https://randomuser.me/api/portraits/lego/2.jpg", "@lincoln","Lincoln")
 
         users.add(user1)
         users.add(user2)
@@ -28,7 +29,15 @@ class HomeActivity : AppCompatActivity() {
             //como o dado será apresentado
             layoutManager = LinearLayoutManager(this@HomeActivity)
             //colocar a lista
-            adapter = MainAdapter(users)
+            adapter = MainAdapter(users) {position ->
+                val intent = Intent(this@HomeActivity, UserPaymentActivity::class.java)
+                intent.putExtra(KEY_INTENT_USER, users[position])
+                startActivity(intent)
+            }
         }
+    }
+
+    companion object {
+        const val KEY_INTENT_USER = "users"
     }
 }

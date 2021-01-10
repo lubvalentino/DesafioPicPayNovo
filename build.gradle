@@ -10,7 +10,10 @@ buildscript {
             'test_junit':           "1.1.2",
             'espresso_core':        "3.3.0",
             'fragment_version':     "1.2.5",
-            'lifecycle_version':    "2.2.0"
+            'lifecycle_version':    "2.2.0",
+            'circleimageview':      "3.1.0",
+            'glide':                "4.11.0",
+            'glide_compiler':       "4.11.0"
             ]
     repositories {
         google()

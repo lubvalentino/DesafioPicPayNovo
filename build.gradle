@@ -9,7 +9,8 @@ buildscript {
             'junit':                "4.13.1",
             'test_junit':           "1.1.2",
             'espresso_core':        "3.3.0",
-            'fragment_version':     "1.2.5"
+            'fragment_version':     "1.2.5",
+            'lifecycle_version':    "2.2.0"
             ]
     repositories {
         google()

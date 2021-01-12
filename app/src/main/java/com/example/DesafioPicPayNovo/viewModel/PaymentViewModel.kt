@@ -1,4 +1,4 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.viewModel
 
 import androidx.lifecycle.ViewModel
 

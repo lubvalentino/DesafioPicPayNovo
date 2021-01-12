@@ -1,4 +1,4 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.view.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.example.DesafioPicPayNovo.R
 import com.example.DesafioPicPayNovo.extensions.setErrorIfEmpty
+import com.example.DesafioPicPayNovo.utils.MaskWatcher
 import com.google.android.material.textfield.TextInputLayout
 
 

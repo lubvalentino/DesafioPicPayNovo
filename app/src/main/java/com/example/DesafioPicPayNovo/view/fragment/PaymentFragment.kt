@@ -1,10 +1,12 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.example.DesafioPicPayNovo.R
+import com.example.DesafioPicPayNovo.viewModel.PaymentViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 

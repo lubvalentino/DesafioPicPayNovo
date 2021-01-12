@@ -1,9 +1,9 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.utils
 
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.widget.EditText
+import com.example.DesafioPicPayNovo.unmask
 
 class MaskWatcher(private var editText: EditText, private var mask: String) : TextWatcher {
 

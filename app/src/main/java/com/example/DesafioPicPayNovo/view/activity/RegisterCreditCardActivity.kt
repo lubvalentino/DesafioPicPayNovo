@@ -1,10 +1,11 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.view.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.DesafioPicPayNovo.R
 
 class RegisterCreditCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

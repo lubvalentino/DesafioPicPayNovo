@@ -11,4 +11,5 @@
     <color name="color_accent">#11C76F</color>
     <color name="hint_color">#66FFFFFF</color>
     <color name="white_80">#CCFFFFFF</color>
+    <color name="gray_disabled_button">#8F929D</color>
 </resources>

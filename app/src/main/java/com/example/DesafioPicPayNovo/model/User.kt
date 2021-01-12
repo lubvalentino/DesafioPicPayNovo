@@ -1,4 +1,4 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

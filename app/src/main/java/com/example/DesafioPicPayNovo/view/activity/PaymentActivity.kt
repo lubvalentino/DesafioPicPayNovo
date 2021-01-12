@@ -1,9 +1,12 @@
-package com.example.DesafioPicPayNovo
+package com.example.DesafioPicPayNovo.view.activity
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.DesafioPicPayNovo.R
+import com.example.DesafioPicPayNovo.view.fragment.PaymentFragment
+import com.example.DesafioPicPayNovo.viewModel.PaymentViewModel
 
 class PaymentActivity : AppCompatActivity() {
 

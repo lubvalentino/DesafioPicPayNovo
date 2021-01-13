@@ -22,7 +22,7 @@ class UserPaymentActivity : AppCompatActivity() {
     }
 
     private fun setUpUser() {
-        Glide.with(this).load(user?.userProfileAvatar).into(findViewById<CircleImageView>(R.id.ivUserPaymentAvatar))
-        findViewById<TextView>(R.id.tvUserPaymentUserId).text = user?.userId
+        Glide.with(this).load(user?.img).into(findViewById<CircleImageView>(R.id.ivUserPaymentAvatar))
+        findViewById<TextView>(R.id.tvUserPaymentUserId).text = user?.username
     }
 }

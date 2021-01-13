@@ -38,10 +38,10 @@ class MainAdapter (
 
         fun bind(user: User, onItemClicked: (Int) -> Unit):Unit = with(itemView){
 
-            Glide.with(itemView.context).load(user.userProfileAvatar).into(findViewById<CircleImageView>(R.id.ivMainItemAvatar))
+            Glide.with(itemView.context).load(user.img).into(findViewById<CircleImageView>(R.id.ivMainItemAvatar))
 
-            findViewById<TextView>(R.id.tvMainItemUser).text = user.userId
-            findViewById<TextView>(R.id.tvMainItemName).text = user.userName
+            findViewById<TextView>(R.id.tvMainItemUser).text = user.username
+            findViewById<TextView>(R.id.tvMainItemName).text = user.name
 
             //ação ao clicar no item
             findViewById<ConstraintLayout>(R.id.vgMainItemContainer).setOnClickListener {

@@ -35,9 +35,9 @@ class HomeActivity : AppCompatActivity() {
                     //como o dado será apresentado
                     layoutManager = LinearLayoutManager(this@HomeActivity)
                     //colocar a lista
-                    adapter = MainAdapter(users) {position ->
+                    adapter = MainAdapter(users.usersList) {position ->
                         val intent = Intent(this@HomeActivity, UserPaymentActivity::class.java)
-                        intent.putExtra(KEY_INTENT_USER, users[position])
+                        intent.putExtra(KEY_INTENT_USER, users.usersList[position])
                         startActivity(intent)
                 }
             }

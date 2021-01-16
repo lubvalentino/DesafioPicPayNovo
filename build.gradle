@@ -13,7 +13,9 @@ buildscript {
             'lifecycle_version':    "2.2.0",
             'circleimageview':      "3.1.0",
             'glide':                "4.11.0",
-            'glide_compiler':       "4.11.0"
+            'glide_compiler':       "4.11.0",
+            'retrofit':             "2.9.0",
+            'coroutines':           "1.4.2"
             ]
     repositories {
         google()

@@ -52,6 +52,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "de.hdodenhof:circleimageview:${versions.circleimageview}"
     implementation "com.github.bumptech.glide:glide:${versions.glide}"
+    implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}"
     kapt "com.github.bumptech.glide:compiler:${versions.glide_compiler}"
     testImplementation "junit:junit:${versions.junit}"
     androidTestImplementation "androidx.test.ext:junit:${versions.test_junit}"

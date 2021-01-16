@@ -1,6 +1,5 @@
 package com.example.DesafioPicPayNovo.view.activity
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -35,10 +34,10 @@ class HomeActivity : AppCompatActivity() {
                     //como o dado será apresentado
                     layoutManager = LinearLayoutManager(this@HomeActivity)
                     //colocar a lista
-                    adapter = MainAdapter(users.usersList) {position ->
-                        val intent = Intent(this@HomeActivity, UserPaymentActivity::class.java)
-                        intent.putExtra(KEY_INTENT_USER, users.usersList[position])
-                        startActivity(intent)
+                    adapter = MainAdapter(users) {position ->
+//                        val intent = Intent(this@HomeActivity, UserPaymentActivity::class.java)
+//                        intent.putExtra(KEY_INTENT_USER, users.usersList[position])
+//                        startActivity(intent)
                 }
             }
         }})

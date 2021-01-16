@@ -1,26 +1,23 @@
 package com.example.DesafioPicPayNovo.view.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.DesafioPicPayNovo.R
-import com.example.DesafioPicPayNovo.model.User
-import de.hdodenhof.circleimageview.CircleImageView
+import com.example.DesafioPicPayNovo.databinding.MainListItemBinding
+import com.example.DesafioPicPayNovo.model.UsersItem
 
 class MainAdapter (
-        private val userList: List<User>,
+    private val userList: List<UsersItem>,
     //função lambda
-        private val onItemClicked: (Int) -> Unit
+    private val onItemClicked: (Int) -> Unit
         ) : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
     //infla o nosso layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.main_list_item, parent, false)
-        return ViewHolder(view)
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val binding = MainListItemBinding.inflate(layoutInflater, parent, false)
+        return ViewHolder(binding)
     }
 
     //coloca os itens na lista baseado em cada posição
@@ -34,17 +31,17 @@ class MainAdapter (
     }
 
     //classe que vai plotar os dados
-    class ViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView){
+    class ViewHolder(private val binding: MainListItemBinding) : RecyclerView.ViewHolder(binding.root){
 
-        fun bind(user: User, onItemClicked: (Int) -> Unit):Unit = with(itemView){
+        fun bind(usersItem: UsersItem, onItemClicked: (Int) -> Unit):Unit = with(itemView){
 
-            Glide.with(itemView.context).load(user.img).into(findViewById<CircleImageView>(R.id.ivMainItemAvatar))
+            Glide.with(itemView.context).load(usersItem.img).into(binding.ivMainItemAvatar)
 
-            findViewById<TextView>(R.id.tvMainItemUser).text = user.username
-            findViewById<TextView>(R.id.tvMainItemName).text = user.name
+            binding.tvMainItemUser.text = usersItem.username
+            binding.tvMainItemName.text = usersItem.name
 
             //ação ao clicar no item
-            findViewById<ConstraintLayout>(R.id.vgMainItemContainer).setOnClickListener {
+            binding.vgMainItemContainer.setOnClickListener {
                 onItemClicked(this@ViewHolder.adapterPosition)
             }
         }

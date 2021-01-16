@@ -1,6 +1,6 @@
 package com.example.DesafioPicPayNovo.model.home
 
-import com.example.DesafioPicPayNovo.model.Users
+import com.example.DesafioPicPayNovo.api.ResponseApi
 
 class HomeBusiness {
 
@@ -8,9 +8,8 @@ class HomeBusiness {
         HomeRepository()
     }
 
-    fun getUsers(): Users{
+    suspend fun getUsers(): ResponseApi {
+        return repository.getUsers()
 
-        val users = repository.getUsers()
-        return users
     }
 }

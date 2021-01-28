@@ -2,4 +2,20 @@
 <resources>
     <string name="app_name">New PicPay Challenge</string>
     <string name="register_credit_card">Card register</string>
+    <string name="credit_card_number">Card Number</string>
+    <string name="credit_card_name">Titular Name</string>
+    <string name="credit_card_expiration">Vencimento</string>
+    <string name="credit_card_cvv">CVV</string>
+    <string name="credit_card_save">Save</string>
+    <string name="credit_card_mask">#### #### #### ####</string>
+    <string name="expiration_mask">##/##</string>
+    <string name="cvv_mask">###</string>
+    <string name="error_mensage_credit_card_number">Preenchimento de campo obrigatório</string>
+    <string name="cadastrar_cart_o">Cadastrar Cartão</string>
+    <string name="cadastre_um_cart_o_de_cr_dito">Cadastre um cartão de crédito</string>
+    <string name="Subtitle">Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">698167494180237</string>
+    <string name="fb_login_protocol_scheme">fb698167494180237</string>
 </resources>

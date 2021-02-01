@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -20,6 +21,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -75,7 +77,18 @@ dependencies {
     //Facebook
     implementation "com.facebook.android:facebook-android-sdk:${versions.facebook}"
 
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:26.4.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+
+    //authentication firebase
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
     //Google
-    implementation "com.google.android.gms:play-services-auth:${versions.google}"
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    //Multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
 
 }

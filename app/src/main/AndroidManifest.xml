@@ -13,44 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main_Activity"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.activity.LoginActivity">
+        <activity android:name=".view.activity.LoginActivity"></activity>
+        <activity android:name=".view.activity.SettingsActivity" />
+        <activity android:name=".view.activity.UserPaymentActivity" />
+        <activity android:name=".view.activity.HomeActivity" />
+        <activity android:name=".view.activity.PaymentActivity" />
+        <activity android:name=".view.activity.RegisterCreditCardActivity" />
+        <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.SettingsActivity"></activity>
-        <activity android:name=".view.activity.UserPaymentActivity" />
-        <activity android:name=".view.activity.HomeActivity"></activity>
-        <activity android:name=".view.activity.PaymentActivity" />
-        <activity android:name=".view.activity.RegisterCreditCardActivity" />
-        <activity android:name=".view.activity.MainActivity">
-        </activity>
 
-        <meta-data
-            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
-            android:value="true" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
-
-        <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
-        <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:scheme="@string/fb_login_protocol_scheme" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
